@@ -1,0 +1,49 @@
+{
+  "name": "alexa-ws-connect",
+  "version": "1.0.0",
+  "description": "A proxy from alexa to a wss.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "concurrently \"npm run watch:server\" \"npm run watch:portal\"",
+    "watch:server": "nodemon --delay 1500ms",
+    "watch:portal": "npm run watch --prefix portal",
+    "build": "npm run build:portal && npm run build:server",
+    "build:server": "tsc",
+    "build:portal": "npm run build --prefix portal"
+  },
+  "keywords": [
+    "alexa",
+    "smart-home-skill"
+  ],
+  "author": "oznu <dev@oz.nu>",
+  "license": "MIT",
+  "dependencies": {
+    "@oznu/ws-connect": "0.0.4",
+    "aws-sdk": "^2.310.0",
+    "body-parser": "^1.18.3",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "helmet": "^3.13.0",
+    "jsonwebtoken": "^8.3.0",
+    "moment": "^2.22.2",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2",
+    "source-map-support": "^0.5.9",
+    "uuid": "^3.3.2",
+    "ws": "^6.0.0"
+  },
+  "devDependencies": {
+    "@types/uuid": "^3.4.4",
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.9.4",
+    "@types/ws": "^6.0.0",
+    "@types/cors": "^2.8.4",
+    "concurrently": "^4.0.1",
+    "nodemon": "^1.18.4",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.3"
+  }
+}

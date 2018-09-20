@@ -1,0 +1,14 @@
+lambda
+server
+portal
+sdk
+.vscode
+.arduino-output
+.env
+Archive.zip
+nodemon.json
+tsconfig.json
+tslint.json
+test.js
+alexa-ws-proxy-*.tgz
+alexa-ws-connect-*.tgz

@@ -1,0 +1,8 @@
+node_modules
+dist
+.env
+.arduino-output
+.vscode
+test.js
+alexa-ws-proxy-*.tgz
+alexa-ws-connect-*.tgz

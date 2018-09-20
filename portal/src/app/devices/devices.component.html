@@ -1,0 +1,32 @@
+<div class="row">
+  <div class="col-md-12">
+    <h3>Device Access Credentials</h3>
+  </div>
+
+  <div class="col-md-12" *ngIf="client">
+    <p>These credentials are used to connect your smart things to the WS Connect gateway.</p>
+
+    <table class="table">
+      <tbody>
+        <tr>
+          <th scope="row">Client ID</th>
+          <td>{{ client.clientId }}</td>
+        </tr>
+        <tr>
+          <th scope="row">Access Token</th>
+          <td>{{ client.accessToken }}</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="col-md-12 text-center" *ngIf="!client">
+    <h4><i class="fas fa-sync fa-spin"></i></h4>
+    <h5>Loading</h5>
+  </div>
+
+</div>

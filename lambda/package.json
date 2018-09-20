@@ -1,0 +1,17 @@
+{
+  "private": true,
+  "name": "lambda",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "oznu <dev@oz.nu>",
+  "license": "MIT",
+  "dependencies": {
+    "jsonwebtoken": "^8.3.0",
+    "r2": "^2.0.1"
+  },
+  "devDependencies": {}
+}
