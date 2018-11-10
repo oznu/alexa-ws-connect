@@ -14,6 +14,10 @@
 
 Copy the SDK into your Arduino IDE library directory.
 
+## Getting Access ID and Token
+
+You can retrieve your WS Connect access ID and token by logging in with your Amazon credentials at https://alexa.iot.oz.nu/.
+
 ## Usage
 
 ```c++
