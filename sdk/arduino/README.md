@@ -1,4 +1,4 @@
-# Ardunio ESP SDK for WS Connect
+# Arduino ESP SDK for WS Connect
 
 ## Supported Devices
 
