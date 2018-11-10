@@ -1,4 +1,4 @@
-# Ardunio ESP8266 SDK for WS Connect
+# Ardunio ESP SDK for WS Connect
 
 ## Supported Devices
 
