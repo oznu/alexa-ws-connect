@@ -11,7 +11,7 @@ export class AuthGuard implements CanActivate {
     private $auth: AuthService
   ) { }
 
-  async canActivate(
+  canActivate(
     route: ActivatedRouteSnapshot,
     state: RouterStateSnapshot
   ) {
@@ -22,7 +22,9 @@ export class AuthGuard implements CanActivate {
       window.sessionStorage.setItem('target_route', state.url);
 
       // try login with amazon
-      return await this.$auth.loginWithAmazon();
+      this.$auth.loginWithAmazon();
+
+      return false;
     }
   }
 }

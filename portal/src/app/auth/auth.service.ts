@@ -55,6 +55,7 @@ export class AuthService {
     })
     .then(() => {
       this.loginInProgress = false;
+      this.$router.navigate(['devices']);
       return true;
     })
     .catch((err) => {
