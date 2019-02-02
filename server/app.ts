@@ -23,7 +23,7 @@ app.use(helmet({
   contentSecurityPolicy: {
     directives: {
       defaultSrc: [`'self'`],
-      frameSrc: ['https://api-cdn.amazon.com'],
+      frameSrc: ['https://api-cdn.amazon.com', 'https://www.amazon.com'],
       scriptSrc: [`'self'`, 'https://api-cdn.amazon.com/sdk/login1.js'],
       styleSrc: [`'self'`, `'unsafe-inline'`],
       imgSrc: [`'self'`, 'https://images-na.ssl-images-amazon.com'],
